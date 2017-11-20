@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{772D2C39-F4F8-4C35-BB21-91B439A380BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Experiment7</RootNamespace>
+    <AssemblyName>Experiment7</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBThread.cs" />
+    <Compile Include="Graph Parameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graph Parameter.Designer.cs">
+      <DependentUpon>Graph Parameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magnitude Parameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magnitude Parameter.Designer.cs">
+      <DependentUpon>Magnitude Parameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monitoring.Designer.cs">
+      <DependentUpon>Monitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerialThread.cs" />
+    <Compile Include="Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SharedClick.cs" />
+    <Compile Include="VarContainer.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graph Parameter.resx">
+      <DependentUpon>Graph Parameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magnitude Parameter.resx">
+      <DependentUpon>Magnitude Parameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitoring.resx">
+      <DependentUpon>Monitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-2Container.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interface7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-Current.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-Power.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-Voltage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Button On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min Button On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings Button On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings Graph On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings Graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings Magnitude On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings Magnitude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphLabel-IMAX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphLabel-IRMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphLabel-P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphLabel-PF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphLabel-Q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphLabel-S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphLabel-THDI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphLabel-THDV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphLabel-VMAX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraphLabel-VRMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radio Button Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radio Button On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-ParameterMagnitude.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-ParameterMagnitude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-Quality.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-ParamGraphVoltage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-ParamGraphCurrent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-ParamGraphPower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-ParamGraphQuality.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Browse Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apply Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-Setting2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interface7-Setting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-Setting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-About.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-About1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-About2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-About3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-About4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-About5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG-About6.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

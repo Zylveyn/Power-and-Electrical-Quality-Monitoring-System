@@ -1,0 +1,15 @@
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\bin\Release\Experiment7.exe.config
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\bin\Release\Experiment7.exe
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\bin\Release\Experiment7.pdb
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\bin\Release\MySql.Data.dll
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\bin\Release\MySql.Data.xml
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\obj\Release\Experiment7.csprojResolveAssemblyReference.cache
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\obj\Release\Experiment7.About.resources
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\obj\Release\Experiment7.Graph_Parameter.resources
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\obj\Release\Experiment7.Magnitude_Parameter.resources
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\obj\Release\Experiment7.Monitoring.resources
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\obj\Release\Experiment7.Properties.Resources.resources
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\obj\Release\Experiment7.Setting.resources
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\obj\Release\Experiment7.csproj.GenerateResource.Cache
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\obj\Release\Experiment7.exe
+F:\Teknik Elektro\TA 1\Visual Studio\test1\Experiment 7\Experiment7\Experiment7\obj\Release\Experiment7.pdb
