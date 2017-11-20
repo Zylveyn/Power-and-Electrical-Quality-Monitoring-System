@@ -1,6 +1,5 @@
-# Project Title
-
-One Paragraph of project description goes here
+# Power and Electrical Quality Monitoring Sytem Software
+It's part of my final assignment work which is done in 3-person team. What we made is a system to measure several electrical aspects, such as VRMS, VMAX, IRMS, IMAX, THD (Total Harmonic Distortion), S, P, Q, and Power Factor at each phase (3 phase in total). The data, then will be showed on a software in numbers and graph also saved on PC fo further measurement.  
 
 ## Getting Started
 
